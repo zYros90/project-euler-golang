@@ -46,7 +46,6 @@ func main() {
 			for k := 0; k < 4; k++ {
 				// down
 				if i < len(gridArray)-3 {
-					// fmt.Println(gridSliceClean[i+k][j])
 					down *= gridArray[i+k][j]
 				}
 				// right
@@ -55,7 +54,6 @@ func main() {
 				}
 				// from top left to bottom right
 				if i < len(gridArray)-3 && j < len(gridArray)-3 {
-					// fmt.Println(gridSliceClean[i+k][j+k])
 					diagRight *= gridArray[i+k][j+k]
 				}
 				// from top right to bottom left
